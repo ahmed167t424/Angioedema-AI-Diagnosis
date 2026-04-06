@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تشخيص الوذمة الوعائية - HAE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>🩺 رفع صورة للتشخيص</h2>
+
+        <input type="file" id="imageInput" accept="image/*">
+        
+        <div id="preview"></div>
+
+        <button onclick="analyzeImage()">🔍 تحليل الصورة</button>
+
+        <div id="result"></div>
+
+        <div id="questionsBox">
+            <h3>❓ الأسئلة الإكلينيكية</h3>
+            <p id="questionText"></p>
+            <div class="question-buttons">
+                <button class="btn-yes" onclick="answer(true)">✅ نعم</button>
+                <button class="btn-no" onclick="answer(false)">❌ لا</button>
+            </div>
+        </div>
+
+        <div id="finalDiagnosis"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

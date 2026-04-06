@@ -1,0 +1,176 @@
+/* ======= إعدادات عامة ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', 'Tajawal', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+    padding: 20px;
+}
+
+/* ======= صندوق رئيسي ======= */
+.container {
+    background: white;
+    max-width: 700px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 40px 30px;
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* ======= العنوان ======= */
+h2 {
+    color: #30467b;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+/* ======= رفع الصورة ======= */
+input[type="file"] {
+    margin: 15px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px dashed #30467b;
+    border-radius: 12px;
+    width: 80%;
+    cursor: pointer;
+    background: #f8f9ff;
+}
+
+input[type="file"]:hover {
+    background: #f0f2ff;
+}
+
+/* ======= معاينة الصورة ======= */
+#preview {
+    margin: 20px 0;
+}
+
+#preview img {
+    max-width: 280px;
+    max-height: 280px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    border: 3px solid #30467b;
+}
+
+/* ======= زر التحليل ======= */
+button {
+    background: #30467b;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #1e2f50;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ======= نتيجة التحليل ======= */
+#result {
+    font-size: 18px;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 12px;
+    background: #f0f4ff;
+    color: #1a1a2e;
+    text-align: right;
+}
+
+/* ======= صندوق الأسئلة ======= */
+#questionsBox {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    display: none;
+}
+
+#questionsBox h3 {
+    color: #30467b;
+    margin-bottom: 15px;
+}
+
+#questionText {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #2d3748;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 10px;
+}
+
+.question-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-yes {
+    background: #28a745;
+}
+
+.btn-yes:hover {
+    background: #1e7e34;
+}
+
+.btn-no {
+    background: #dc3545;
+}
+
+.btn-no:hover {
+    background: #a71d2a;
+}
+
+/* ======= التشخيص النهائي ======= */
+#finalDiagnosis {
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.diagnosis-angioedema {
+    background: #f8d7da;
+    color: #721c24;
+    border-right: 5px solid #dc3545;
+}
+
+.diagnosis-normal {
+    background: #d4edda;
+    color: #155724;
+    border-right: 5px solid #28a745;
+}
+
+.diagnosis-not_angioedema {
+    background: #fff3cd;
+    color: #856404;
+    border-right: 5px solid #ffc107;
+}
+
+.diagnosis-other {
+    background: #e2e3e5;
+    color: #383d41;
+    border-right: 5px solid #6c757d;
+}
